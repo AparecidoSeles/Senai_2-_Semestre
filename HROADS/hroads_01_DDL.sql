@@ -30,7 +30,12 @@ CREATE TABLE Personagens
 	,MaxVida			INT
 	,MaxMana			INT
 	,Atualizacao		VARCHAR(200) 
-	,Criacao			VARCHAR(200) 
+	,Criacao			DATE 
+);
+CREATE TABLE ClassesHabilidades
+(
+	IdClasse			INT FOREIGN KEY REFERENCES Classes (IdClasse)
+	,IdHab				INT FOREIGN KEY REFERENCES Habilidades (IdHab)
 );
 
 --DDL
