@@ -454,19 +454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\saulo.santos\\.nuget\\packages\\": {}
+    "C:\\Users\\seles\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saulo.santos\\Downloads\\SENAI\\CT\\2021-1S-2D\\senai-dev-1s2021-alunos\\sprint-2-back-end\\exercicios\\01_peoples\\senai_peoples_webApi\\senai_peoples_webApi\\senai_peoples_webApi.csproj",
+      "projectUniqueName": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Banco-Dados-Relacao\\Sprint-2_back-end\\01_peoples\\senai_peoples_webApi\\senai_peoples_webApi\\senai_peoples_webApi.csproj",
       "projectName": "senai_peoples_webApi",
-      "projectPath": "C:\\Users\\saulo.santos\\Downloads\\SENAI\\CT\\2021-1S-2D\\senai-dev-1s2021-alunos\\sprint-2-back-end\\exercicios\\01_peoples\\senai_peoples_webApi\\senai_peoples_webApi\\senai_peoples_webApi.csproj",
-      "packagesPath": "C:\\Users\\saulo.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saulo.santos\\Downloads\\SENAI\\CT\\2021-1S-2D\\senai-dev-1s2021-alunos\\sprint-2-back-end\\exercicios\\01_peoples\\senai_peoples_webApi\\senai_peoples_webApi\\obj\\",
+      "projectPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Banco-Dados-Relacao\\Sprint-2_back-end\\01_peoples\\senai_peoples_webApi\\senai_peoples_webApi\\senai_peoples_webApi.csproj",
+      "packagesPath": "C:\\Users\\seles\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Banco-Dados-Relacao\\Sprint-2_back-end\\01_peoples\\senai_peoples_webApi\\senai_peoples_webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\saulo.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\seles\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
