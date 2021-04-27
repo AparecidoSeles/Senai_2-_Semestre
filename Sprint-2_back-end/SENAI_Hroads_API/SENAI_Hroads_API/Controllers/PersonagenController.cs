@@ -13,107 +13,103 @@ namespace SENAI_Hroads_API.Controllers
     //define que o tipo de reposta da API será no formato JSON
     [Produces("application/json")]
     //define que a rota de uma requisição será no formato domínio/api/NomeController
-    //ex: http://localhost:5000/api/calsses
+    //ex: http://localhost:5000/api/habilidade
     [Route("api/[controller]")]
     //Define que é um controlador de API
     [ApiController]
-    public class ClassesController : ControllerBase
+    public class PersonagenController : ControllerBase
     {
         /// <summary>
-        /// Obejto _classesRepository irá receber todos os métodos definidos na interface IClassesRepository
+        /// Obejto _habilidadeRepository irá receber todos os métodos definidos na interface IHabilidadeRepository
         /// </summary>
-        private IClassesRepository _classeRepository { get; set; }
-
+        private IPersonagenRepository _personagenRepository { get; set; }
 
         /// <summary>
-        /// instancia o objeto _classesRepository para que haja uma referência nos métodos implememtados no repositório ClassesRepository
+        /// instancia o objeto _personagenRepository para que haja uma referência nos métodos implememtados no repositório PersonagenRepository
         /// </summary>
-        public ClassesController()
+        public PersonagenController()
         {
-            _classeRepository = new ClassesRepository();
+            _personagenRepository = new PersonagenRepository();
         }
 
         /// <summary>
-        /// Lista todas as classes
+        /// Lista todos os Personagens
         /// </summary>
-        /// <returns>Uma lista de Classes  e um status code 200 - ok </returns>
+        /// <returns>Uma lista de personagens  e um status code 200 - ok </returns>
         [HttpGet]
         public IActionResult Get()
         {
             //retorna a resposta da  requisição fazendo uma chamada para o método
-            return Ok(_classeRepository.Listar());
+            return Ok(_personagenRepository.Listar());
         }
 
         /// <summary>
-        /// Busca a classe pelo seu id
+        /// Busca o Personagem pelo seu id
         /// </summary>
-        /// <param name="id">Id da classe que será buscada</param>
-        /// <returns> a classe encontrada e um status code 200 - ok</returns>
+        /// <param name="id">Id do Personagem que será buscada</param>
+        /// <returns> o personagem encontrado e um status code 200 - ok</returns>
         [HttpGet("{id}")]
         public IActionResult GetByid(int id)
         {
             //return ex: reposta da requisição fazendo a chamada para o método
-            return Ok(_classeRepository.BuscarId(id));
+            return Ok(_personagenRepository.BuscarId(id));
         }
 
         /// <summary>
-        /// Cadastra uma nova classe
+        /// Cadastra um novo Personagem
         /// </summary>
-        /// <param name="NovaClasse">objeto NovaClasse que será cadastrada</param>
+        /// <param name="NovoPersonagem">objeto NovoPersonagem que será cadastrada</param>
         /// <returns>um statud code 201- Created</returns>
         [HttpPost]
-        public IActionResult Post(Classes NovaClasse)
+        public IActionResult Post(Personagen NovoPersonagem)
 
         {
             //faza a chamada para o método 
-            _classeRepository.Cadastrar(NovaClasse);
+            _personagenRepository.Cadastrar(NovoPersonagem);
 
             return StatusCode(201);
         }
 
         /// <summary>
-        /// Atualiza a classe existente
+        /// Atualiza o personagem existente
         /// </summary>
-        /// <param name="id">Id da classe que será atualizada</param>
-        /// <param name="ClasseAtualizada">objeto ClasseAtualizada com as novas informações</param>
+        /// <param name="id">Id do personagem que será atualizadp</param>
+        /// <param name="PersonagemAtualizado">objeto PersonagemAtualizado com as novas informações</param>
         /// <returns>um  status code 204 - no Content </returns> 
-        [HttpPut("{id}")] 
-        public IActionResult Put(int id, Classes ClasseAtualizada)
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, Personagen PersonagemAtualizado)
         {
             //Faz a chamada para o método
-            _classeRepository.Atualizar(id, ClasseAtualizada);
+            _personagenRepository.Atualizar(id, PersonagemAtualizado);
 
             //retorna um status code 
             return StatusCode(204);
         }
 
-
         /// <summary>
-        /// Deleta uma classe existente
+        /// Deleta um personagem existente
         /// </summary>
-        /// <param name="id">id da classe que sera deletada</param>
+        /// <param name="id">id do Personagem que sera deletado</param>
         /// <returns>um status code 204 -  no Cotent</returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             //faz a chamada para o método
-            _classeRepository.Deletar(id);
+            _personagenRepository.Deletar(id);
 
             //retorna um status code
             return StatusCode(204);
         }
-            
 
         /// <summary>
-        ///  Lista todos as classes e seus respectivos personagens
+        ///  Lista todos os Personagens e suas respectivas Classes
         /// </summary>
-        /// <returns>lista de classes com os personagens e um status code 200 - ok </returns>
-        [HttpGet("personagem")]
+        /// <returns>lista de Personagens com as Classes e um status code 200 - ok </returns>
+        [HttpGet("Classes")]
         public IActionResult GetPersonagem()
         {
             //retorna a repsosta da requisição fazendo a chamda para o método
-            return Ok(_classeRepository.ListarClasses());
+            return Ok(_personagenRepository.ListarPersonagen());
         }
-
     }
 }

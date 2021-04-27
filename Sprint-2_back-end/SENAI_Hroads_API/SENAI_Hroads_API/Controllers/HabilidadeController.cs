@@ -13,107 +13,103 @@ namespace SENAI_Hroads_API.Controllers
     //define que o tipo de reposta da API será no formato JSON
     [Produces("application/json")]
     //define que a rota de uma requisição será no formato domínio/api/NomeController
-    //ex: http://localhost:5000/api/calsses
+    //ex: http://localhost:5000/api/habilidade
     [Route("api/[controller]")]
     //Define que é um controlador de API
     [ApiController]
-    public class ClassesController : ControllerBase
+    public class HabilidadeController : ControllerBase
     {
         /// <summary>
-        /// Obejto _classesRepository irá receber todos os métodos definidos na interface IClassesRepository
+        /// Obejto _habilidadeRepository irá receber todos os métodos definidos na interface IHabilidadeRepository
         /// </summary>
-        private IClassesRepository _classeRepository { get; set; }
-
+        private IHabilidadeRepository _habilidadeRepository { get; set; }
 
         /// <summary>
-        /// instancia o objeto _classesRepository para que haja uma referência nos métodos implememtados no repositório ClassesRepository
+        /// instancia o objeto _habilidadeRepository para que haja uma referência nos métodos implememtados no repositório HabilidadeRepository
         /// </summary>
-        public ClassesController()
+        public HabilidadeController()
         {
-            _classeRepository = new ClassesRepository();
+            _habilidadeRepository = new HabilidadeRepository();
         }
 
         /// <summary>
-        /// Lista todas as classes
+        /// Lista todas as Habilidades
         /// </summary>
-        /// <returns>Uma lista de Classes  e um status code 200 - ok </returns>
+        /// <returns>Uma lista de Habilidades  e um status code 200 - ok </returns>
         [HttpGet]
         public IActionResult Get()
         {
             //retorna a resposta da  requisição fazendo uma chamada para o método
-            return Ok(_classeRepository.Listar());
+            return Ok(_habilidadeRepository.Listar());
         }
 
         /// <summary>
-        /// Busca a classe pelo seu id
+        /// Busca a Habilidade pelo seu id
         /// </summary>
-        /// <param name="id">Id da classe que será buscada</param>
-        /// <returns> a classe encontrada e um status code 200 - ok</returns>
+        /// <param name="id">Id da habiliade que será buscada</param>
+        /// <returns> a habilidade encontrada e um status code 200 - ok</returns>
         [HttpGet("{id}")]
         public IActionResult GetByid(int id)
         {
             //return ex: reposta da requisição fazendo a chamada para o método
-            return Ok(_classeRepository.BuscarId(id));
+            return Ok(_habilidadeRepository.BuscarId(id));
         }
 
         /// <summary>
-        /// Cadastra uma nova classe
+        /// Cadastra uma nova habilidade
         /// </summary>
-        /// <param name="NovaClasse">objeto NovaClasse que será cadastrada</param>
+        /// <param name="NovaHabilidade">objeto NovaHabilidade que será cadastrada</param>
         /// <returns>um statud code 201- Created</returns>
         [HttpPost]
-        public IActionResult Post(Classes NovaClasse)
+        public IActionResult Post(Habilidade NovaHabilidade)
 
         {
             //faza a chamada para o método 
-            _classeRepository.Cadastrar(NovaClasse);
+            _habilidadeRepository.Cadastrar(NovaHabilidade);
 
             return StatusCode(201);
         }
 
         /// <summary>
-        /// Atualiza a classe existente
+        /// Atualiza a habilidade existente
         /// </summary>
-        /// <param name="id">Id da classe que será atualizada</param>
-        /// <param name="ClasseAtualizada">objeto ClasseAtualizada com as novas informações</param>
+        /// <param name="id">Id da habilidade que será atualizada</param>
+        /// <param name="HabilidadeAtualizada">objeto HabilidadeAtualizada com as novas informações</param>
         /// <returns>um  status code 204 - no Content </returns> 
-        [HttpPut("{id}")] 
-        public IActionResult Put(int id, Classes ClasseAtualizada)
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, Habilidade HabilidadeAtualizada)
         {
             //Faz a chamada para o método
-            _classeRepository.Atualizar(id, ClasseAtualizada);
+            _habilidadeRepository.Atualizar(id, HabilidadeAtualizada);
 
             //retorna um status code 
             return StatusCode(204);
         }
 
-
         /// <summary>
-        /// Deleta uma classe existente
+        /// Deleta uma habiliadde existente
         /// </summary>
-        /// <param name="id">id da classe que sera deletada</param>
+        /// <param name="id">id da habilidade que sera deletada</param>
         /// <returns>um status code 204 -  no Cotent</returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             //faz a chamada para o método
-            _classeRepository.Deletar(id);
+            _habilidadeRepository.Deletar(id);
 
             //retorna um status code
             return StatusCode(204);
         }
-            
 
         /// <summary>
-        ///  Lista todos as classes e seus respectivos personagens
+        ///  Lista todos as habilidades e seus respectivos TiposHabilidades
         /// </summary>
-        /// <returns>lista de classes com os personagens e um status code 200 - ok </returns>
-        [HttpGet("personagem")]
+        /// <returns>lista de Habilidades com os TiposHabilidades e um status code 200 - ok </returns>
+        [HttpGet("TipoHabilidade")]
         public IActionResult GetPersonagem()
         {
             //retorna a repsosta da requisição fazendo a chamda para o método
-            return Ok(_classeRepository.ListarClasses());
+            return Ok(_habilidadeRepository.ListarHabilidades());
         }
-
     }
 }
