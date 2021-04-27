@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SENAI_Hroads_API.Contexts;
+using SENAI_Hroads_API.Context;
 using SENAI_Hroads_API.Domains;
 using SENAI_Hroads_API.Interfaces;
 

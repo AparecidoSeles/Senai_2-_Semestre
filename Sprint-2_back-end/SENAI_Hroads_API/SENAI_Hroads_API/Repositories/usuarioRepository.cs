@@ -1,7 +1,7 @@
-﻿using Senai.HRoads.WebApi.Domains;
-using Senai.HRoads.WebApi.Interfaces;
-using SENAI_Hroads_API.Contexts;
+﻿using Senai.HRoads.WebApi.Interfaces;
+using SENAI_Hroads_API.Domains;
 using System;
+using SENAI_Hroads_API.Context;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

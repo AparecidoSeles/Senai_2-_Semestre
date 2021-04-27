@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using SENAI_Hroads_API.Contexts;
+using SENAI_Hroads_API.Context;
 using SENAI_Hroads_API.Domains;
 using SENAI_Hroads_API.Interfaces;
 
@@ -63,7 +63,6 @@ namespace SENAI_Hroads_API.Repositories
 
             //salva as informações para serem salvas no banco de dados
             ctx.SaveChanges();
-
         }
 
 
@@ -101,7 +100,7 @@ namespace SENAI_Hroads_API.Repositories
         public List<Classes> ListarClasses()
         {
             //retorna uma lista de classes e seus personagens
-            return ctx.Classes.Include(c => c.Personagens ).ToList();
+            return ctx.Classes.Include(c => c.Personagens).ToList();
         }
     }
 }

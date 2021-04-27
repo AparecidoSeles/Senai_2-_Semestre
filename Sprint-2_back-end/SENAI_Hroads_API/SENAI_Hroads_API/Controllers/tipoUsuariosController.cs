@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Senai.HRoads.WebApi.Domains;
 using Senai.HRoads.WebApi.Interfaces;
 using Senai.HRoads.WebApi.Repositories;
+using SENAI_Hroads_API.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;

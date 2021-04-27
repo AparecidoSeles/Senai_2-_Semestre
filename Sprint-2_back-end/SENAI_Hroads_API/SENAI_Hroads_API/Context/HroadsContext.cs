@@ -1,12 +1,11 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Senai.HRoads.WebApi.Domains;
 using SENAI_Hroads_API.Domains;
 
 #nullable disable
 
-namespace SENAI_Hroads_API.Contexts
+namespace SENAI_Hroads_API.Context
 {
     public partial class HroadsContext : DbContext
     {
@@ -31,9 +30,8 @@ namespace SENAI_Hroads_API.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                //optionsBuilder.UseSqlServer("Data source=DESKTOP-OL23F2H\\SQLEXPRESS; initial catalog=Senai_Hroads_Manha; user Id=sa; pwd=senai@132");
-                optionsBuilder.UseSqlServer("Data source=DESKTOP-OL23F2H\\SQLEXPRESS; initial catalog=Senai_Hroads_Manha; user Id=sa; pwd=senai@132");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Data source=DESKTOP-OL23F2H\\SQLEXPRESS; initial catalog=Senai_Hroads_Manha; user id=sa; pwd=senai@132;");
             }
         }
 

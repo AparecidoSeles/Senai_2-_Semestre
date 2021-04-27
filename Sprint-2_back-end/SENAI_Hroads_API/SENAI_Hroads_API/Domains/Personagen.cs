@@ -7,10 +7,8 @@ namespace SENAI_Hroads_API.Domains
 {
     public partial class Personagen
     {
-        public Personagen()
-        {
-            Classes = new HashSet<Classes>();
-        }
+        
+
         public int IdPersonagem { get; set; }
         public int? IdClasse { get; set; }
         public string Nome { get; set; }
@@ -20,6 +18,8 @@ namespace SENAI_Hroads_API.Domains
         public DateTime? Criacao { get; set; }
 
         public virtual Classes IdClasseNavigation { get; set; }
-        public HashSet<Classes> Classes { get; set; }
+        public object Classes { get; set; }
+
+        //public virtual ICollection<Classes> Classes { get; set; }
     }
 }
