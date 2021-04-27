@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using SENAI_Hroads_API.Domains;
 
 #nullable disable
 
-namespace SENAI_Hroads_API.Domains
+namespace Senai.HRoads.WebApi.Domains
 {
     public partial class TipoHabilidade
     {

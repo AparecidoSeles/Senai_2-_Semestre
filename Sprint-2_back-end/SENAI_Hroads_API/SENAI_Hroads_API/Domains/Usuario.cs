@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace SENAI_Hroads_API.Domains
+namespace Senai.HRoads.WebApi.Domains
 {
     public partial class Usuario
     {

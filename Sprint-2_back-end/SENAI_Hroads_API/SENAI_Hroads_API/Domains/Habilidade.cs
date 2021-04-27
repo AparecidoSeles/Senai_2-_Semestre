@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Senai.HRoads.WebApi.Domains;
 
 #nullable disable
 
