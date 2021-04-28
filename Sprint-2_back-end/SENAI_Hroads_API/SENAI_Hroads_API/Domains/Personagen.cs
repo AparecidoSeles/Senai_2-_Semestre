@@ -18,8 +18,9 @@ namespace SENAI_Hroads_API.Domains
         public DateTime? Criacao { get; set; }
 
         public virtual Classes IdClasseNavigation { get; set; }
-        public object Classes { get; set; }
 
-        //public virtual ICollection<Classes> Classes { get; set; }
+        //public object Classes { get;  set; }
+
+        public virtual ICollection<Classes> Classes { get; set; }
     }
 }
