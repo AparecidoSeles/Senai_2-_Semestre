@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj": {}
+    "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj": {
+    "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj",
         "projectName": "Senai.HRoads.WebApi",
-        "projectPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj",
+        "projectPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj",
         "packagesPath": "C:\\Users\\seles\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\seles\\AppData\\Roaming\\NuGet\\NuGet.Config",

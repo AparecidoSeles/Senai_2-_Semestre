@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F2H8HhW47lUKR2ZWNas+B+q9pqk2s1MYQJCyA5KLhzZDbGDKeZ/tJy5Ab4Ocf+8GgS8sqgas071z7J4/vBaIqg==",
+  "dgSpecHash": "1B9cLJU3Lr6l4Ryxv6+haIw/Wql+PRrk4LEpC4AV+ClVrjwfgjj+LZafvmOoOJOPkF8iMCXdPTpy5G2NL6BW7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\seles\\OneDrive\\Área de Trabalho\\Pastas Senai\\Felipe-Sprint-2-Exercicios\\Felipe-Sprint-2-exercicios\\Hroads\\senai.HRoads.WebApi\\Senai.HRoads.WebApi\\Senai.HRoads.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seles\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\seles\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.5\\microsoft.aspnetcore.authentication.jwtbearer.5.0.5.nupkg.sha512",
