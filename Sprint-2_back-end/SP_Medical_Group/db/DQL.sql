@@ -18,7 +18,7 @@ SELECT * FROM Situacoes;
 SELECT * FROM Consultas;
 
 -- Número de usuários
-SELECT COUNT(IdUsuario) FROM Usuarios;
+SELECT COUNT(IdUsuario) AS [Total de Usuários] FROM Usuarios;
 
 -- Usuários
 SELECT IdUsuario, TU.Titulo AS Tipo, Email FROM Usuarios U
