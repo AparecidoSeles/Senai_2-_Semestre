@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace senai_CZBooks_api.Controllers
 {
+    /// <summary>
+    /// Controller responsável pelos endpoints referentes aos Livros 
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class LivrosController : ControllerBase
