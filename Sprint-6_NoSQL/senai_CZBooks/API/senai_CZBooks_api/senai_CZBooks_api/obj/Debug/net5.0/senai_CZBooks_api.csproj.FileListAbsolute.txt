@@ -65,3 +65,5 @@ C:\Users\FIC\Desktop\Aparecido\Senai_2-_Semestre\Sprint-6_NoSQL\senai_CZBooks\AP
 C:\Users\FIC\Desktop\Aparecido\Senai_2-_Semestre\Sprint-6_NoSQL\senai_CZBooks\API\senai_CZBooks_api\senai_CZBooks_api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\FIC\Desktop\Aparecido\Senai_2-_Semestre\Sprint-6_NoSQL\senai_CZBooks\API\senai_CZBooks_api\senai_CZBooks_api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\FIC\Desktop\Aparecido\Senai_2-_Semestre\Sprint-6_NoSQL\senai_CZBooks\API\senai_CZBooks_api\senai_CZBooks_api\obj\Debug\net5.0\senai_CZBooks_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\FIC\Desktop\Aparecido\Senai_2-_Semestre\Sprint-6_NoSQL\senai_CZBooks\API\senai_CZBooks_api\senai_CZBooks_api\bin\Debug\net5.0\senai_CZBooks_api.xml
+C:\Users\FIC\Desktop\Aparecido\Senai_2-_Semestre\Sprint-6_NoSQL\senai_CZBooks\API\senai_CZBooks_api\senai_CZBooks_api\obj\Debug\net5.0\senai_CZBooks_api.xml
