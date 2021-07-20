@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,7 +22,27 @@ namespace senai_lovePets_webApi
         public void ConfigureServices(IServiceCollection services)
         {
             // Adiciona o serviço dos Controllers
-            services.AddControllers();
+            services
+                .AddControllers()
+                .AddNewtonsoftJson(options =>
+                {
+                    // Ignora os loopings nas consultas
+                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                    // Ignora valores nulos ao fazer junções nas consultas
+                    options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                });
+
+            // Adiciona o CORS ao projeto
+            services.AddCors(options => {
+                options.AddPolicy("CorsPolicy", 
+                    builder => {
+                        builder.WithOrigins("http://localhost:3000", "http://localhost:19006")
+                                                                    .AllowAnyHeader()
+                                                                    .AllowAnyMethod();
+                    }
+                );
+            });
+
 
             // Adiciona o serviço do Swagger
             // https://docs.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio
@@ -88,6 +109,8 @@ namespace senai_lovePets_webApi
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

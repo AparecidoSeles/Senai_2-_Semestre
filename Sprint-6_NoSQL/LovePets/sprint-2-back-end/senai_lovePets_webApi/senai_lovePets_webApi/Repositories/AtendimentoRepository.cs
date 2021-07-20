@@ -1,4 +1,5 @@
-﻿using senai_lovePets_webApi.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using senai_lovePets_webApi.Contexts;
 using senai_lovePets_webApi.Domains;
 using senai_lovePets_webApi.Interfaces;
 using System;
@@ -123,7 +124,11 @@ namespace senai_lovePets_webApi.Repositories
         /// <returns>Uma lista de atendimentos</returns>
         public List<Atendimento> ListarTodos()
         {
-            return ctx.Atendimentos.ToList();
+            return ctx.Atendimentos
+                .Include("IdPetNavigation")
+                .Include(a => a.IdVeterinarioNavigation)
+                .Include(a => a.IdSituacaoNavigation)
+                .ToList();
         }
     }
 }
