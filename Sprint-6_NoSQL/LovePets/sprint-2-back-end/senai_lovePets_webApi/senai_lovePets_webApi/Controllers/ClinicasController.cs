@@ -108,7 +108,7 @@ namespace senai_lovePets_webApi.Controllers
         /// <summary>
         /// Deleta uma Clinica Existente
         /// </summary>
-        /// <param name="idAtendimento">Id da clinica que será deletada</param>
+        /// <param name="IdClinica">Id da clinica que será deletada</param>
         /// <returns>Um status code 204 - No Content</returns>
        [Authorize(Roles = "1")]
         [HttpDelete("{IdClinica}")]
