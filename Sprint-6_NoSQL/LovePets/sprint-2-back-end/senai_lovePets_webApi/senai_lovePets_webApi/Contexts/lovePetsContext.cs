@@ -38,7 +38,7 @@ namespace senai_lovePets_webApi.Contexts
                 // optionsBuilder.UseSqlServer("Data Source=DESKTOP-30RGV41\\SQLEXPRESS; initial catalog=lovePets_manha; user Id=sa; pwd=senai@132;");
 
                                 ///// INSTANCIA BANCO SQL APARECIDO////
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-A97HKRA\\SQLEXPRESS; initial catalog=lovePets_manha; user Id=sa; pwd=sa132;");
+                optionsBuilder.UseSqlServer("Data Source=LAB08DESK2001\\SQLEXPRESS; initial catalog=lovePets_manha; user Id=sa; pwd=sa132;");
             }
         }
 

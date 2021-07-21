@@ -9084,11 +9084,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Aparecido\\Senai_2-_Semestre\\Sprint-6_NoSQL\\lovePets\\sprint-2-back-end\\senai_lovePets_webApi\\senai_lovePets_webApi\\senai_lovePets_webApi.csproj",
+      "projectUniqueName": "C:\\Users\\FIC\\Desktop\\Aparecido\\Senai_2-_Semestre\\Sprint-6_NoSQL\\LovePets\\sprint-2-back-end\\senai_lovePets_webApi\\senai_lovePets_webApi\\senai_lovePets_webApi.csproj",
       "projectName": "senai_lovePets_webApi",
-      "projectPath": "C:\\Users\\FIC\\Desktop\\Aparecido\\Senai_2-_Semestre\\Sprint-6_NoSQL\\lovePets\\sprint-2-back-end\\senai_lovePets_webApi\\senai_lovePets_webApi\\senai_lovePets_webApi.csproj",
+      "projectPath": "C:\\Users\\FIC\\Desktop\\Aparecido\\Senai_2-_Semestre\\Sprint-6_NoSQL\\LovePets\\sprint-2-back-end\\senai_lovePets_webApi\\senai_lovePets_webApi\\senai_lovePets_webApi.csproj",
       "packagesPath": "C:\\Users\\FIC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FIC\\Desktop\\Aparecido\\Senai_2-_Semestre\\Sprint-6_NoSQL\\lovePets\\sprint-2-back-end\\senai_lovePets_webApi\\senai_lovePets_webApi\\obj\\",
+      "outputPath": "C:\\Users\\FIC\\Desktop\\Aparecido\\Senai_2-_Semestre\\Sprint-6_NoSQL\\LovePets\\sprint-2-back-end\\senai_lovePets_webApi\\senai_lovePets_webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\FIC\\AppData\\Roaming\\NuGet\\NuGet.Config",

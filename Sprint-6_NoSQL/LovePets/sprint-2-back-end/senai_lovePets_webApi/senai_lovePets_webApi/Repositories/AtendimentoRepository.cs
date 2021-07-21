@@ -114,6 +114,9 @@ namespace senai_lovePets_webApi.Repositories
         public List<Atendimento> ListarMeus(int idUsuario)
         {
             return ctx.Atendimentos
+                .Include("IdPetNavigation")
+                .Include(a => a.IdVeterinarioNavigation)
+                .Include(a => a.IdSituacaoNavigation)
                 .Where(a => a.IdVeterinarioNavigation.IdUsuario == idUsuario || a.IdPetNavigation.IdUsuario == idUsuario)
                 .ToList();
         }

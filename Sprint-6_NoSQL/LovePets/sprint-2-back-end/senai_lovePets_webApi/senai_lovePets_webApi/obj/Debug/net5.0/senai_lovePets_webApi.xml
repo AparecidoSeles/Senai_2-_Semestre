@@ -51,6 +51,41 @@
             </summary>
             <returns>Uma lista de atendimentos com o Status code 200 - Ok</returns>
         </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma clinica através do seu Id
+            </summary>
+            <param name="IdClinica">Id da clinica que será Buscada</param>
+            <returns>Uma Clínica encontrada com Um Status code 200 - Ok</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.ListarTodos">
+            <summary>
+            Lista todos as Clinicas
+            </summary>
+            <returns>Um status code 200 - Ok com o conteúdo da Lista</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.Cadastrar(senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Cadastra uma Nova Clinica
+            </summary>
+            <param name="NovaClinica">Onjeto com as novas Informações</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Atualiza uma Clinica 
+            </summary>
+            <param name="IdClinica">Id da Clínica que será Atualizada</param>
+            <param name="ClinicaAtualizada">Objeto com as novas informações</param>
+            <returns>Um Status code  204 - No Content</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Controllers.ClinicasController.Deletar(System.Int32)">
+            <summary>
+            Deleta uma Clinica Existente
+            </summary>
+            <param name="idAtendimento">Id da clinica que será deletada</param>
+            <returns>Um status code 204 - No Content</returns>
+        </member>
         <member name="M:senai_lovePets_webApi.Interfaces.IAtendimentoRepository.ListarTodos">
             <summary>
             Lista todos os atendimentos
@@ -411,6 +446,43 @@
             Lista todos os atendimentos
             </summary>
             <returns>Uma lista de atendimentos</returns>
+        </member>
+        <member name="F:senai_lovePets_webApi.Repositories.ClinicaRepository.ctx">
+            <summary>
+            instancia o objeto ctx ultilizando a classe lovePetsContext
+            </summary>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.Atualizar(System.Int32,senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Atualiza uma Clínica existente
+            </summary>
+            <param name="idClinica">Id da clinica que será atualizada</param>
+            <param name="ClinicaAtualizada">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma Clínica através do seu id
+            </summary>
+            <param name="idClinica">Id da clínica que será buscada</param>
+            <returns>Clínica encontrada</returns>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.Cadastrar(senai_lovePets_webApi.Domains.Clinica)">
+            <summary>
+            Cadastra uma nova Clínica
+            </summary>
+            <param name="NovaClinica">Objeto com as novas informações</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.Deletar(System.Int32)">
+            <summary>
+            Clínica que será Deletada
+            </summary>
+            <param name="IdClinica">Id da Clínica que será deletada</param>
+        </member>
+        <member name="M:senai_lovePets_webApi.Repositories.ClinicaRepository.ListarTodos">
+            <summary>
+            Lista todos as Clínicas
+            </summary>
+            <returns>Lista com todas as Clínicas caso haja mais de uma</returns>
         </member>
         <member name="M:senai_lovePets_webApi.Repositories.UsuarioRepository.BuscarPorEmailSenha(System.String,System.String)">
             <summary>
