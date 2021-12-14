@@ -92,9 +92,7 @@ namespace SPMedicalGroup_WebAPI
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
             // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "SP Medical Group API");
+            app.UseSwaggerUI(c =>{c.SwaggerEndpoint("/swagger/v1/swagger.json", "SP Medical Group API");
                 c.RoutePrefix = string.Empty;
             });
 
